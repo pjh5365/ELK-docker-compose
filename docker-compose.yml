@@ -25,7 +25,7 @@ services:
     depends_on:
       - elasticsearch
     volumes:
-      - ./logstash:/usr/share/logstash/pipeline
+      - ./logstash:/usr/share/logstash/pipeline # logstash 설정파일을 적용하도록 마운트
     environment:
       - "LS_JAVA_OPTS=-Xms512m -Xmx512m"
       - TZ=Asia/Seoul
